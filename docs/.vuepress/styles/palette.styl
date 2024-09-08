@@ -1,0 +1,202 @@
+//***vdoing主题-样式变量（你可以修改这些变量值以覆盖主题使用的样式变量）***//
+
+// 以下注释的变量仅供参考，主题使用的最新变量请查看：https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/theme-vdoing/styles/palette.styl
+
+// // 颜色
+$mark-color= #db4437;
+$text-h3-color= #0f9d58;
+$text-h2-color= #4285f4;
+$bannerTextColor = #0f9d58// 首页banner区(博客标题)文本颜色
+$accentColor = #41b883 // 主题色
+// $activeColor = #ff5722
+// $arrowBgColor = #ccc
+$sidebar-fontsize = 17px
+$inline-code-color= #e95d00
+$inline-code-background-color = #F8F8F8
+
+// // 布局
+// $navbarHeight = 3.6rem
+$sidebarWidth = 19rem
+$contentWidth = 760px
+$homePageWidth = 1100px
+// $rightMenuWidth = 230px // 右侧菜单
+
+// // 代码块
+// $lineNumbersWrapperWidth = 2.5rem
+
+// // 浅色模式
+.theme-mode-light {
+  --bodyBg: #DDF3FF;
+  // --mainBg: rgba(255,255,255,1)
+  // --sidebarBg: rgba(255,255,255,.8)
+//   --blurBg: rgba(255,255,255,.9)
+  --textColor: #18191c;
+//   --textLightenColor: #0085AD
+//   --borderColor: rgba(0,0,0,.15)
+  
+  }
+
+//   // 代码块浅色主题
+//   --codeBg: #f6f6f6
+//   --codeColor: #525252
+//   codeThemeLight()
+//   // // 代码块深色主题
+//   // --codeBg: #252526
+//   // --codeColor: #fff
+//   // codeThemeDark()
+
+
+.prev .icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: calc(.5ex - .35em);
+  }
+.next .icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: calc(.5ex - .35em);
+  }
+
+a.sidebar-link {
+    font-size: $sidebar-fontsize !important;
+    display: inline-block;
+    color: var(--textColor);
+    border-left: 0.25rem solid transparent;
+    padding: 0.25rem 1rem 0.25rem 1.25rem;
+    line-height: 1.4;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-weight: 400 !important;
+}
+  
+
+
+// a.sidebar-link:hover {
+//     background: #f4f4f4
+//   }
+
+a.active.sidebar-link {
+    font-weight: 400;
+    color: accentColor;
+    border-left-color: transparent;
+    // border-left: 0.25rem solid transparent;
+    // background: #41b88333;    
+  }
+
+li {
+  margin: 0 !important;
+}
+
+
+  
+
+
+.sidebar-group.is-sub-group > .sidebar-heading {
+  font-weight: 400;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: $sidebar-fontsize;
+}
+
+.sidebar-heading {
+  font-size: $sidebar-fontsize !important;
+  font-weight: 400 !important;
+  }
+
+.sidebar-group.is-sub-group > .sidebar-group-items {
+  // padding-left: 0rem;
+  }
+
+.sidebar-group.is-sub-group > .sidebar-group-items > li > .sidebar-link {
+  font-size: $sidebar-fontsize;
+  }
+
+
+.theme-vdoing-content:not(.custom) > h2 {
+  color: $text-h2-color ;
+  }
+
+.theme-vdoing-content:not(.custom) > h3 {
+  color: $text-h3-color ;
+  }
+  
+.theme-vdoing-content:not(.custom) > h4 {
+  color: $text-h4-color ;
+  }
+
+
+.theme-vdoing-content:not(.custom) > h2 {
+  margin-bottom: 0 !important;
+  }
+
+.sidebar-heading .arrow {
+  float: right;
+  top: 17px;
+  }
+
+// .main-wrapper .main-right .card-box {
+//     background: rgb(255, 247, 235);
+//     }
+
+a.title.iconfont{
+  color $text-h4-color;
+}
+
+// .home-wrapper .banner .banner-conent .hero h1 {
+//   background: linear-gradient(to right, #f55555 43%, #fccf31 50%);
+//   background-clip: text;
+//   color: transparent;
+//   }
+
+// .home-wrapper .banner .banner-conent .hero .description {
+//   background: linear-gradient(to right, #f55555 20%, #fccf31 80%);
+//   background-clip: text;
+//   color: transparent;
+//   }
+
+.navbar .site-name {
+    background: linear-gradient(to right, #f55555 30%, #5555f5 60%);
+  background-clip: text;
+  color: transparent;
+  }
+
+.home-wrapper .banner .banner-conent .hero .description {
+  font-size: 1.6rem !important;
+  }
+
+.blogger-wrapper .avatar {
+  background: #aaaaff
+  // border-bottom: 2px solid #222222
+  }
+
+mark {
+  background-color: $mark-color;
+  color #ffffff;
+  padding: 1px 2px;
+  border-radius: 3px;
+}
+
+li::marker {
+  color: $text-h2-color;
+  }
+
+.custom-block {
+    overflow: hidden;
+    border-style: solid;
+    border-width: 0 0 0 4px !important;
+    border-radius: 5px;
+}
+
+p.custom-block-title {
+    color: #000 !important;
+    font-weight: normal !important;
+}
+
+.theme-vdoing-content code {
+  color: $inline-code-color !important;
+  background-color: $inline-code-background-color !important;
+  font-size: 17px !important;
+  }
